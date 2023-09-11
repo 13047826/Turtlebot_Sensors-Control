@@ -2,6 +2,7 @@
 
 Jieun Hong 13047826 <br>
 Melody Hood 13560901 <br>
+Naga Bonu 13908948 <br>
 
 ## Weekly Goals
 ### Week 6: Simulation Environment Setup
