@@ -1,8 +1,0 @@
-prefix=/home/girin/turtlebot_ws/devel
-
-Name: leader_follower_environment
-Description: Description of leader_follower_environment
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
