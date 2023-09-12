@@ -12,12 +12,12 @@ Naga Bonu 13908948 <br>
 - [ ] Add a marker to the Leader Turtlebot.
 - [x] Complete Leader Turtlebot teleoperation.
 
-## Git
-Remember to git pull before you work! <br>
+## Version Control
+Remember to ~git pull~ before each session! <br>
 
 ### Git Process
-~~~git clone~~~ into catkin_ws/src using SSH <br>
-~~~git pull~~~ to update local repository <br>
-~~~git add~~~ the files you want to update to the online repository <br>
-~~~git commit -m "Message"~~~ change<br>
-~~~git push~~~ <br>
+`git clone /SSH Link/` copies the repository to the current directory <br>
+`git pull` updates the local repository at the current directory <br>
+`git add` indicates which files you want to update in the online repository <br>
+`git commit -m "Message"` commits the changes to the online repository<br>
+`git push` updates the online repository <br>
