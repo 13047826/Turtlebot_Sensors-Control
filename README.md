@@ -13,7 +13,7 @@ Naga Bonu 13908948 <br>
 - [x] Complete Leader Turtlebot teleoperation.
 
 ## Version Control
-Remember to ~git pull~ before each session! <br>
+Remember to `git pull` before each session! <br>
 
 ### Git Process
 `git clone /SSH Link/` copies the repository to the current directory <br>
