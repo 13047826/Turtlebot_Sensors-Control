@@ -18,8 +18,10 @@ Remember to `git pull` before each session! <br>
 ### Week 6: Simulation Environment Setup
 - [x] Create a custom package 'leader_follower_environment' which spawns two turtlebots in empty world.
   > [!NOTE]
-  > To launch environment: `roslaunch leader_follower_environment environment.launch`
+  > To launch environment:
+  > `roslaunch leader_follower_environment environment.launch`
 - [ ] Add a marker to the Leader Turtlebot.
 - [x] Complete Leader Turtlebot teleoperation.
   > [!NOTE]
-  > To teleoperate using teleop_twist_keyboard, use `rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/turtlebot1/cmd_vel`
+  > To teleoperate using teleop_twist_keyboard:
+  > `rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/turtlebot1/cmd_vel`
