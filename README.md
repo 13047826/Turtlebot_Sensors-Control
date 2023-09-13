@@ -14,6 +14,9 @@ Remember to `git pull` before each session! <br>
 `git commit -m "Message"` commits the changes to the online repository<br>
 `git push` updates the online repository <br>
 
+### Catkin Process
+To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials/using_a_workspace)
+
 ## Weekly Goals
 ### Week 6: Simulation Environment Setup
 - [x] Create a custom package 'leader_follower_environment' which spawns two turtlebots in empty world.
