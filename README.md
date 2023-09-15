@@ -24,6 +24,7 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
   > To launch environment:
   > `roslaunch leader_follower_environment environment.launch`
 - [ ] Add a marker to the Leader Turtlebot.
+- [x] Add a camera to the Follower Turtlebot.
 - [x] Complete Leader Turtlebot teleoperation.
   > [!NOTE]
   > To teleoperate using teleop_twist_keyboard:
