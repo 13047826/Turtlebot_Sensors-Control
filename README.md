@@ -20,9 +20,9 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
 
 ## Weekly Goals
 > [!NOTE]
-> Weekly goals are set according to the Team's Gantt Chart
+> Weekly goals are set according to the Team's Gantt Chart<sub>[Project Proposal pg9](https://studentutsedu.sharepoint.com/:b:/s/SensorsControl433/EWT4FWaFJzBEnYt4l1wyZAoBesYJsXxdT7zrp4fGAdr2Jw?e=0khZb6)</sub>
 
-### Week 6: Simulation Environment Setup
+### Week 6: Simulation Environment Setup<sup>17 September 2023</sup> 
 - [x] Create a custom package 'leader_follower_environment' which spawns two turtlebots in empty world.
   > [!NOTE]
   > To launch environment:
@@ -35,20 +35,20 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
   > `rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/turtlebot1/cmd_vel`
 - [x] Test moving Follower Turtlebot from Matlab.
 
-### Week 7: Feature Extraction
+### Week 7: Feature Extraction<sup>24 September 2023</sup>
 - [ ] Explore Feature Extraction Methods
 - [ ] Test & compare different feature extraction methods
 - [ ] Integrate to Follower Turtlebot
 
-### Week 8: Initial Motor Control
+### Week 8: Initial Motor Control<sup>01 October 2023</sup>
 - [ ] Complete week 7 if incomplete
 - [ ] Initialise Leader & Follower interaction
 
-### Week 9: Leader-Follower Algorithm
+### Week 9: Leader-Follower Algorithm<sup>08 October 2023</sup>
 - [ ] Continue Leader & Follower interaction
 - [ ] Complete a fully integrated Leader-Follower Algorithm
 
-### Week 10: Project Code + Demo Video
+### Week 10: Project Code + Demo Video<sup>15 October 2023</sup>
 - [ ] Finalise code structure and readme files
 - [ ] Collect image/video recordings for the demo video (save inside Teams>Documents>2.Deliverables>2.Demo Video>Resources folder)
 - [ ] Complete Demo Video
