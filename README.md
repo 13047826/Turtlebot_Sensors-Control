@@ -29,3 +29,4 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
   > [!NOTE]
   > To teleoperate using teleop_twist_keyboard:
   > `rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/turtlebot1/cmd_vel`
+- [x] Test moving Follower Turtlebot from Matlab.
