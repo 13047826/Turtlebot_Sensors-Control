@@ -7,6 +7,7 @@ Naga Bonu 13908948 <br>
 ## Version Control
 > [!IMPORTANT]
 > Remember to `git pull` before each session! <br>
+> When copying packages from your local directory, remove .git & .github folders (<kbd> Ctrl </kbd> + <kbd> H </kbd> will show these folders) <br>
 
 ### Git Process
 `git clone /SSH Link/` copies the repository to the current directory <br>
