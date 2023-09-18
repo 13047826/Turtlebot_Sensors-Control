@@ -28,7 +28,7 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
   > [!NOTE]
   > To launch environment:
   > `roslaunch leader_follower_environment environment.launch`
-- [ ] Add a marker to the Leader Turtlebot.
+- [X] Add a marker to the Leader Turtlebot.
 - [x] Add a camera to the Follower Turtlebot.
 - [x] Complete Leader Turtlebot teleoperation.
   > [!NOTE]
