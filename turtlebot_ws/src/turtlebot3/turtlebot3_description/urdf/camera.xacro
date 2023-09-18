@@ -64,6 +64,7 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
+    <!-- Need this to colour camera in red-->
     <material>Gazebo/Red</material>
   </gazebo>
 
