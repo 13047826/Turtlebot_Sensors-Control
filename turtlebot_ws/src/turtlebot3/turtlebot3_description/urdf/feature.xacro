@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <joint name="feature_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="feature_link"/>
+    <!--origin xyz="-0.105 0.0 ${0.192/2+0.02}" rpy="0 0 0"/--> <!--Origin for rectangle geometry-->
+    <origin xyz="-0.105 0.0 ${0.192/2+0.02}" rpy="0 ${pi/2} 0"/> <!--Origin for cylinder geometry-->
+  </joint>
+
+  <link name="feature_link">
+    <visual>
+        <geometry>
+            <!--box size="0.001 0.1 0.1"/--> <!-- Rectangle -->
+            <cylinder radius="0.10" length="0.005"/> <!-- Cylinder -->
+        </geometry>
+        <material name="white"/>
+    </visual>
+  </link>
+
+</robot>
+
+<!-- GAZEBO ATTEMPT - not required? -->
+
