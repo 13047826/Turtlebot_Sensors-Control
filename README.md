@@ -37,6 +37,12 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
   - Under the 'Robot_Description' parameter, type /Follower/robot_description
     ![image](https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/bfbeb392-9271-4ab5-9482-c14bff0e7933)
 
+  - Add a Camera setting Image Topic to /Follower/camera/image_raw
+    ![image](https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/a871c3e2-41d1-42fe-8932-95b8fc56991b)
+    
+  - We can also add other sensors such as laserscan
+    ![image](https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/ce726c78-7751-4339-a4b2-93e8815009cd)
+
 3. To run teleoperate the Leader Turtlebot3, launch the following in a new terminal:
   - `rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/Leader/cmd_vel`
     ![image](https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/534dc46c-7a21-4ab9-a35e-466b5f25dbd4)
