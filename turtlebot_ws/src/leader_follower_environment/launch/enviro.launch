@@ -4,10 +4,10 @@
     <arg name="follower_init_pose" value="-x 0 -y 0 -z 0" />
     <arg name="follower_name"  value="Follower" />
     <param name="/use_sim_time" value="true" />
-    <param name="leader_description"
+    <!-- <param name="leader_description"
     command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/leader.urdf.xacro" />
     <param name="follower_description"
-    command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/follower.urdf.xacro" />
+    command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/follower.urdf.xacro" /> -->
 
     <!--Creating environment-->
     <node name="gazebo" pkg="gazebo_ros" type="gazebo" 
@@ -15,33 +15,33 @@
 
     <!--BEGIN LEADER TURTLEBOT-->
     <group ns="Leader">
-        <!--<param name="robot_description" 
-        command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_burger.urdf.xacro" />-->
+        <param name="robot_description" 
+        command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/leader.urdf.xacro" />
 
         <node pkg="robot_state_publisher" type="robot_state_publisher" 
             name="robot_state_publisher" output="screen">
-            <param name="tf_prefix" value="turtlebot_1"/>
+            <!-- <param name="tf_prefix" value="Leader"/> -->
             <!--<param name="publish_frequency" type="double" value="50.0" />-->
         </node>
 
         <node name="spawn_leader_urdf" pkg="gazebo_ros" type="spawn_model" 
-        args="$(arg leader_init_pose) -urdf -param /leader_description -model $(arg leader_name)"
+        args="$(arg leader_init_pose) -urdf -param robot_description -model $(arg leader_name)"
         respawn="false" output="screen"/>
     </group>
 
   <!-- BEGIN FOLLOWER TURTLEBOT-->
     <group ns="Follower">
-        <!--<param name="robot_description" 
-        command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/follower.urdf.xacro" />-->
+        <param name="robot_description" 
+        command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/follower.urdf.xacro" />
 
         <node pkg="robot_state_publisher" type="robot_state_publisher" 
             name="robot_state_publisher" output="screen">
-            <param name="tf_prefix" value="turtlebot_2"/>
+            <!-- <param name="tf_prefix" value="Follower"/> -->
             <!--<param name="publish_frequency" type="double" value="50.0" />-->
         </node>
 
         <node name="spawn_follower_urdf" pkg="gazebo_ros" type="spawn_model"
-        args="$(arg follower_init_pose) -urdf -param /follower_description -model $(arg follower_name)"
+        args="$(arg follower_init_pose) -urdf -param robot_description -model $(arg follower_name)"
         respawn="false" output="screen"/>
     </group>
 
