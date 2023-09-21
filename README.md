@@ -4,7 +4,7 @@ Jieun Hong 13047826 <br>
 Melody Hood 13560901 <br>
 Naga Bonu 13908948 <br>
 
-## :clipboard: Version Control
+## :bookmark_tabs: Version Control
 > [!IMPORTANT]
 > Remember to `git pull` before each session! <br>
 > When copying packages from your local directory, remove .git & .github folders (<kbd> Ctrl </kbd> + <kbd> H </kbd> will show these folders) <br>
