@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <joint name="marker_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="marker_link"/>
+    <origin xyz="-0.105 0.0 ${0.192/2+0.02}" rpy="0 ${pi/2} 0"/>
+  </joint>
+
+  <link name="marker_link">
+    <visual>
+        <geometry>
+            <cylinder radius="0.10" length="0.005"/>
+        </geometry>
+        <material name="blue"/>
+    </visual>
+  </link>
+
+  <gazebo reference="marker_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+</robot>
+
