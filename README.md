@@ -19,7 +19,7 @@ Naga Bonu 13908948 <br>
 ### Catkin Process
 To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials/using_a_workspace)
 
-### :space_invader: Starting the Simulation Environment
+## :space_invader: Starting the Simulation Environment
 
 1. In linux terminal, launch:
   - `roslaunch leader_follower_environment enviro.launch`
@@ -49,7 +49,7 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
 
 4. Matlab is used to control the Follower Turtlebot3 (To be updated).
 
-## Video of Complete Setup
+### Video of Complete Setup
 
 https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/8eb17093-9635-436b-9df2-dc9470652422
 
