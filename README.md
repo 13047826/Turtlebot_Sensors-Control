@@ -4,6 +4,14 @@ Jieun Hong 13047826 <br>
 Melody Hood 13560901 <br>
 Naga Bonu 13908948 <br>
 
+**Contents** <br>
+[Version Control](README.md) <br>
+[Git Process](README.md) <br>
+[Catkin Process](README.md) <br>
+[Starting the Simulation Environment](README.md) <br>
+[Weekly Goals](README.md) <br>
+
+
 ## Version Control
 > [!IMPORTANT]
 > Remember to `git pull` before each session! <br>
