@@ -4,7 +4,7 @@ Jieun Hong 13047826 <br>
 Melody Hood 13560901 <br>
 Naga Bonu 13908948 <br>
 
-## Version Control
+## :clipboard: Version Control
 > [!IMPORTANT]
 > Remember to `git pull` before each session! <br>
 > When copying packages from your local directory, remove .git & .github folders (<kbd> Ctrl </kbd> + <kbd> H </kbd> will show these folders) <br>
@@ -53,7 +53,7 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
 
 https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/8eb17093-9635-436b-9df2-dc9470652422
 
-## Weekly Goals
+## :dart: Weekly Goals
 > [!NOTE]
 > Weekly goals are set according to the Team's Gantt Chart<sub>[Project Proposal pg9](https://studentutsedu.sharepoint.com/:b:/s/SensorsControl433/EWT4FWaFJzBEnYt4l1wyZAoBesYJsXxdT7zrp4fGAdr2Jw?e=0khZb6)</sub>
 
