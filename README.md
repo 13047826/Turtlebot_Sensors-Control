@@ -24,7 +24,7 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
 1. In linux terminal, launch:
   - Default (White Cylinder Marker): `roslaunch leader_follower_environment enviro.launch` <br>
     > [!NOTE]  
-    > New Environment Options have been updated. You can now pass arguments (`use_marker` and `marker_blue`) to change marker type and colour. <br>
+    > New Environment Options have been updated. You can now pass arguments (`use_rectangle` and `marker_blue`) to change marker type and colour. <br>
     > Some options are as follows: <br>
     > Blue Cylinder Marker: `roslaunch leader_follower_environment enviro.launch marker_blue:=true`  <br>
     > White Rectangle Marker: `roslaunch leader_follower_environment enviro.launch use_rectangle:=true`  <br>
