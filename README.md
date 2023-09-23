@@ -25,14 +25,11 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
   - Default (White Cylinder Marker): `roslaunch leader_follower_environment enviro.launch`
 
 > [!NOTE]  
-> New Environment Options have been updated. You can now pass arguments (`use_marker` and `marker_blue`) to change marker type and colour.
-> Some options are as follows:
-> 
-> Blue Cylinder Marker: `roslaunch leader_follower_environment enviro.launch marker_blue:=true`
-> 
-> White Rectangle Marker: `roslaunch leader_follower_environment enviro.launch use_rectangle:=true`
-> 
-> Blue Rectangle Marker: `roslaunch leader_follower_environment enviro.launch use_rectangle:=true marker_blue:=true`
+> New Environment Options have been updated. You can now pass arguments (`use_marker` and `marker_blue`) to change marker type and colour. <br>
+> Some options are as follows: <br>
+> Blue Cylinder Marker: `roslaunch leader_follower_environment enviro.launch marker_blue:=true`  <br>
+> White Rectangle Marker: `roslaunch leader_follower_environment enviro.launch use_rectangle:=true`  <br>
+> Blue Rectangle Marker: `roslaunch leader_follower_environment enviro.launch use_rectangle:=true marker_blue:=true`  <br>
     ![image](https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/f0699cc8-1042-4d99-a260-8b9fb39f513c)
 
 2. To run RViz, in a new terminal, launch:
