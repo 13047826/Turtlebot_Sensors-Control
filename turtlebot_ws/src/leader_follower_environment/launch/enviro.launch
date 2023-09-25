@@ -3,6 +3,10 @@
     <arg name="leader_name"  value="Leader" />
     <arg name="follower_init_pose" value="-x 0 -y 0 -z 0" />
     <arg name="follower_name"  value="Follower" />
+    <!--feature option-->
+    <arg name="use_rectangle" default="false" />
+    <!--Colour option-->
+    <arg name="marker_blue" default="false" />
     <param name="/use_sim_time" value="true" />
     <!-- <param name="leader_description"
     command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/leader.urdf.xacro" />
@@ -16,7 +20,7 @@
     <!--BEGIN LEADER TURTLEBOT-->
     <group ns="Leader">
         <param name="robot_description" 
-        command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/leader.urdf.xacro" />
+        command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/leader.urdf.xacro use_rectangle:=$(arg use_rectangle) marker_blue:=$(arg marker_blue)" />
 
         <node pkg="robot_state_publisher" type="robot_state_publisher" 
             name="robot_state_publisher" output="screen">

@@ -4,7 +4,7 @@ Jieun Hong 13047826 <br>
 Melody Hood 13560901 <br>
 Naga Bonu 13908948 <br>
 
-## :clipboard: Version Control
+## :bookmark_tabs: Version Control
 > [!IMPORTANT]
 > Remember to `git pull` before each session! <br>
 > When copying packages from your local directory, remove .git & .github folders (<kbd> Ctrl </kbd> + <kbd> H </kbd> will show these folders) <br>
@@ -22,8 +22,15 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
 ## :space_invader: Starting the Simulation Environment
 
 1. In linux terminal, launch:
-  - `roslaunch leader_follower_environment enviro.launch`
-    ![image](https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/f0699cc8-1042-4d99-a260-8b9fb39f513c)
+  - Default (White Cylinder Marker): `roslaunch leader_follower_environment enviro.launch` <br>
+    > [!NOTE]  
+    > New Environment Options have been updated. You can now pass arguments (`use_rectangle` and `marker_blue`) to change marker type and colour. <br>
+    > Some options are as follows: <br>
+    > Blue Cylinder Marker: `roslaunch leader_follower_environment enviro.launch marker_blue:=true`  <br>
+    > White Rectangle Marker: `roslaunch leader_follower_environment enviro.launch use_rectangle:=true`  <br>
+    > Blue Rectangle Marker: `roslaunch leader_follower_environment enviro.launch use_rectangle:=true marker_blue:=true`  <br>
+
+  ![image](https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/f0699cc8-1042-4d99-a260-8b9fb39f513c)
 
 2. To run RViz, in a new terminal, launch:
   - `rviz`

@@ -1,24 +1,57 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <!--launch options-->
+  <!--NOTE: By default, environment will run with cylinder-type marker (white)-->
+  <xacro:arg name="use_rectangle" default="false" />
+  <xacro:arg name="marker_blue" default="false" />
+
+
   <joint name="feature_joint" type="fixed">
     <parent link="base_footprint"/>
     <child link="feature_link"/>
-    <!--origin xyz="-0.105 0.0 ${0.192/2+0.02}" rpy="0 0 0"/--> <!--Origin for rectangle geometry-->
-    <origin xyz="-0.105 0.0 ${0.192/2+0.02}" rpy="0 ${pi/2} 0"/> <!--Origin for cylinder geometry-->
+    <xacro:if value="$(arg use_rectangle)">
+      <!--Origin for rectangle geometry-->
+      <origin xyz="-0.105 0.0 ${0.192/2+0.02}" rpy="0 0 0" />
+    </xacro:if>
+    <xacro:unless value="$(arg use_rectangle)">
+    <!--Origin for cylinder geometry-->
+    <origin xyz="-0.105 0.0 ${0.192/2+0.02}" rpy="0 ${pi/2} 0"/> 
+    </xacro:unless>
   </joint>
 
   <link name="feature_link">
     <visual>
         <geometry>
-            <!--box size="0.001 0.1 0.1"/--> <!-- Rectangle -->
-            <cylinder radius="0.10" length="0.005"/> <!-- Cylinder -->
+            <xacro:if value="$(arg use_rectangle)">
+              <!-- Rectangle -->
+              <box size="0.001 0.1 0.1"/> 
+            </xacro:if>
+            <xacro:unless value="$(arg use_rectangle)">
+            <!-- Cylinder -->
+            <cylinder radius="0.10" length="0.005"/>
+            </xacro:unless>
         </geometry>
-        <material name="white"/>
+        <xacro:if value="$(arg marker_blue)">
+          <material name="blue"/>
+        </xacro:if>
+        <xacro:unless value="$(arg marker_blue)">
+          <material name="white"/>
+        </xacro:unless>
     </visual>
   </link>
 
+  <!-- GAZEBO -->
+  <gazebo reference="feature_link">
+    <xacro:if value="$(arg marker_blue)">
+      <material>Gazebo/Blue</material>
+    </xacro:if>
+    <xacro:unless value="$(arg marker_blue)">
+      <material>Gazebo/White</material>
+    </xacro:unless>
+  </gazebo>
+
 </robot>
 
-<!-- GAZEBO ATTEMPT - not required? -->
+
 
