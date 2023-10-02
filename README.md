@@ -78,13 +78,13 @@ https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/8eb17093-9
 - [x] Test moving Follower Turtlebot from Matlab.
 
 ### Week 7: Feature Extraction<sup>24 September 2023</sup>
-- [ ] Explore Feature Extraction Methods
-- [ ] Test & compare different feature extraction methods
-- [ ] Integrate to Follower Turtlebot
+- [x] Explore Feature Extraction Methods
+- [x] Test & compare different feature extraction methods
+- [x] Integrate to Follower Turtlebot
 
 ### Week 8: Initial Motor Control<sup>01 October 2023</sup>
 - [ ] Complete week 7 if incomplete
-- [ ] Initialise Leader & Follower interaction
+- [x] Initialise Leader & Follower interaction
 
 ### Week 9: Leader-Follower Algorithm<sup>08 October 2023</sup>
 - [ ] Continue Leader & Follower interaction
