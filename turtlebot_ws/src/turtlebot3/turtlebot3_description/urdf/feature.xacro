@@ -12,11 +12,11 @@
     <child link="feature_link"/>
     <xacro:if value="$(arg use_rectangle)">
       <!--Origin for rectangle geometry-->
-      <origin xyz="0 0.0 0.068" rpy="0 0 0" />
+      <origin xyz="-0.0965 0.0 0.141" rpy="0 0 0" />
     </xacro:if>
     <xacro:unless value="$(arg use_rectangle)">
     <!--Origin for cylinder geometry-->
-    <origin xyz="0 0.0 0.068" rpy="0 ${pi/2} 0"/> 
+    <origin xyz="-0.0965 0.0 0.141" rpy="0 ${pi/2} 0"/> 
     </xacro:unless>
   </joint>
 
