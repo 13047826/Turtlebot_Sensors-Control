@@ -6,7 +6,7 @@
 4. Implement search mode (scanning for leader)
 5. Capture RGB/Depth images
 6. Use SURF for feature detection
-7. Identify leader
+7. Identify leader by recognising colour/shape 
 8. Rotate follower turtlebot to leader turtlebot via states
 9. Factor in variables such as angle, velocity, distance
 10. Consider distance maintained between follower and leader
