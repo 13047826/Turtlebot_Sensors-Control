@@ -47,7 +47,7 @@ classdef Testing_movement
         % Movement of leader 
         function rotateTowardsLeader(obj, leaderPosition)
             % Define the desired rotation speed (angular velocity)
-            rotationSpeed = 0.2; % You can adjust this value as needed
+            rotationSpeed = 0.2; 
 
             % Get the leader's x and y position from the leaderPosition vector
             leaderX = leaderPosition(1);
