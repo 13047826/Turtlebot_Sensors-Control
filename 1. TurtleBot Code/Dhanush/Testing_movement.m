@@ -18,9 +18,9 @@ classdef Testing_movement
             rosinit(ipaddress);
 
             % Create subscribers and publishers
-            obj.RGBCamSub = rossubscriber("camera_rgb_topic"); % Replace with the actual topic name
-            obj.DCamSub = rossubscriber("camera_depth_topic"); % Replace with the actual topic name
-            obj.CmdVelPub = rospublisher("cmd_vel_topic"); % Replace with the actual topic name
+            obj.RGBCamSub = rossubscriber("camera_rgb_topic"); 
+            obj.DCamSub = rossubscriber("camera_depth_topic"); 
+            obj.CmdVelPub = rospublisher("cmd_vel_topic"); 
         end
 
         % Search for leader
