@@ -2,6 +2,7 @@ classdef LIDAR < matlab.mixin.SetGet
 
     properties
     scanSub % laser scan subscriber
+    cameraOffset = 0.123; % camera offset
     end
 
     methods
@@ -10,7 +11,7 @@ classdef LIDAR < matlab.mixin.SetGet
         end
 
         function [minDistance, index, Z, isValid] = lidarDepth(obj)
-            lidarMsg = get(receive(obj.scanSub));
+            lidarMsg = receive(obj.scanSub);
             % Record minimum distance and corresponding index
             [minDistance, index] = min(lidarMsg.Ranges);
             % Calculate angle of the minimum distance using index

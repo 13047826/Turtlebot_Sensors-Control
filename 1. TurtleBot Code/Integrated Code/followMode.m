@@ -23,11 +23,11 @@ camera.updateFeatureCentreCorners;
     if (isnan(get(camera, "featureCorners")) == false)
         
         % Interpolate distance with camera calibration
-        camera.interpolateDistance;
-        Z = double(get(camera, "featureDistance")/100); % Lidar
+        % camera.interpolateDistance;
+        % Z = double(get(camera, "featureDistance")/100); % Lidar
         
         % Get Distance If Feature Detected
-        % Z = LIDAR.lidardepth();
+        Z = LIDAR.lidarDepth();
         m = get(camera, "featureCorners");
         [vLinear, vAngular] = controller.computeVelocity(m,Z);     % Compute appropriate velocities
         controller.publishVelMatrix(vLinear, vAngular);           % Publisher cmdvel 
