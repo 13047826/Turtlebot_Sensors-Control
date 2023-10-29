@@ -16,7 +16,6 @@ classdef FeatureExtractionMelody
             % Centre = x,y
             % Corners = x,y
             % This function gets sees blue and converts the image to greyscale with respect to blue
-            close all
             
             % Breaking rgbImg into colour components
             r1 = rgbImg(:,:,1);
