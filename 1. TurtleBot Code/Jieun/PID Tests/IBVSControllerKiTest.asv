@@ -1,0 +1,103 @@
+classdef IBVSControllerKiTest
+    properties
+        desiredFeaturePoints = [229  52;    % Bottom left
+                                229 240;    % Top left
+                                418  52;    % Bottom right
+                                418 240];   % Top left
+        f = 530;                            % focal length 3.04mm in pixels    
+        p = [320 240];                      % principle point assuming centre of image
+        cameraOffset = 0.123;               % offset between lidar & camera
+        KCam;                               % camera intrinsic parameter matrix
+        lambda = 0.4;                       % reduce error by 10% each timestamp
+
+        eiX = 0;                            % Integral error for vx
+        eiZ = 0;                            % Integral error for vz
+        epreviousX = 0;                     % previous error for vx
+        epreviousZ = 0;                     % previous error for vz
+
+        
+        KpLinear = 0.2;                     % Linear PID gains
+        KiLinear = 1.0;
+        KdLinear = 0.0;
+    
+        KpAngular = 0.1;                    % Angular PID gains
+        KiAngular = 0.0;
+        KdAngular = 0.0;
+
+        desiredZ = 0.14;                   % Z where desiredFeaturePoints was measured
+
+        maxLinearVelocity = 0.26;     % Maximum linear velocity
+        minLinearVelocity = -0.26;    % Minimum linear velocity
+        maxAngularVelocity = 1.82;    % Maximum angular velocity
+        minAngularVelocity = -1.82;   % Minimum angular velocity
+
+    end
+    
+    methods
+        %function obj = IBVSController(controlGain)
+        function obj = IBVSControllerKiTest()
+            % Camera Intrinsic Parameter for square pixel (fx=fy)
+            obj.KCam = [obj.f     0 obj.p(1);
+                            0 obj.f obj.p(2);
+                            0     0        1];
+        end
+        
+        function [vLinear, vAngular, epZ, epX] = PIDControl(obj, m, Z)
+            
+            % To find 2D point (x,y) 
+            xy = (obj.desiredFeaturePoints-obj.p)/obj.f;    % S*
+            mxy = (m - obj.p)/obj.f;                        % S
+
+            % To find error e(t)
+            e_2 = mxy - xy;
+            % To put x in first row, y in second
+            e_2 = e_2';
+            % use 'reshape' to put in single column
+            e = reshape(e_2,[],1);
+            
+            % grab errors for x and z
+            eX = e(1:2:end);
+            eZ = Z - obj.desiredZ;
+
+            % Linear PID Controller
+            epZ = eZ;                   % Proportional = actual distance
+            obj.eiZ = obj.eiZ + epZ;    % integral = sum of error
+            edZ = epZ - obj.epreviousZ; % Derivative = change in error
+            vLinear = obj.KpLinear*epZ + obj.KiLinear*obj.eiZ + obj.KdLinear*edZ;   % PID formula
+            obj.epreviousZ = epZ;       % Update previous distance
+
+            % Angular PID Controller
+            epX = sum(eX);              % Proportional
+            obj.eiX = obj.eiX + epX;    % integral = sum of error
+            edX = epX - obj.epreviousX; % Derivative = change in error
+            vAngular = obj.KpAngular*epX + obj.KiAngular*obj.eiX + obj.KdAngular*edX;   % PID formula
+            obj.epreviousX = epX;       % Update previous
+
+            % Apply min/max velocities
+            vLinear = max(obj.minLinearVelocity, min(obj.maxLinearVelocity, vLinear));
+            vAngular = max(obj.minAngularVelocity, min(obj.maxAngularVelocity, vAngular));
+
+        end
+
+        function [minDistance, index, Z] = lidarDepth(obj, lidarMsg)
+            % Record minimum distance and corresponding index
+            [minDistance, index] = min(lidarMsg.Ranges);
+            % Calculate angle of the minimum distance using index
+            angleMinDistance = lidarMsg.AngleIncrement * (index-1);
+            % Calculate cartesian x at this minimum distance
+            cartesianX = minDistance*cos(angleMinDistance);
+            % Subtract cameraOffset to calculate camera depth
+            Z = cartesianX - obj.cameraOffset;
+
+            % Validate the depth data
+            if isnan(Z) || isinf(Z) || Z < 0
+                error('Invalid depth data. Script execution will end.');
+            end
+        end
+
+    end
+
+    methods (Access = private)
+
+    end
+end
