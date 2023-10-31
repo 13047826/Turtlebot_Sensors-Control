@@ -1,4 +1,4 @@
-# INTEGRATED PROJECT CODE
+# :turtle:INTEGRATED PROJECT CODE
 ## :bookmark_tabs:INSTRUCTIONS ON CODE EXECUTION
 
 1. Download turtlebot_ws which contains the custom rospackage (leader_follower_environment) and the turtlebot packages
