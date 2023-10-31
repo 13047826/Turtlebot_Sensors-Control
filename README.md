@@ -64,7 +64,7 @@ To install packages see this [ROS tutorial](http://wiki.ros.org/catkin/Tutorials
 
 ### Video of Complete Setup
 
-https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/8eb17093-9635-436b-9df2-dc9470652422
+[https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/8eb17093-9635-436b-9df2-dc9470652422](https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/a0e748a2-8f1e-4535-b199-55fb119baf4d)
 
 ## :dart: Weekly Goals
 > [!NOTE]
