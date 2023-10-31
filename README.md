@@ -83,14 +83,14 @@ https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/8eb17093-9
 - [x] Integrate to Follower Turtlebot
 
 ### Week 8: Initial Motor Control<sup>01 October 2023</sup>
-- [ ] Complete week 7 if incomplete
+- [x] Complete week 7 if incomplete
 - [x] Initialise Leader & Follower interaction
 
 ### Week 9: Leader-Follower Algorithm<sup>08 October 2023</sup>
-- [ ] Continue Leader & Follower interaction
-- [ ] Complete a fully integrated Leader-Follower Algorithm
+- [x] Continue Leader & Follower interaction
+- [x] Complete a fully integrated Leader-Follower Algorithm
 
 ### Week 10: Project Code + Demo Video<sup>15 October 2023</sup>
-- [ ] Finalise code structure and readme files
-- [ ] Collect image/video recordings for the demo video (save inside [Teams>Documents>2.Deliverables>2.Demo Video>Resources folder](https://studentutsedu.sharepoint.com/:f:/r/sites/SensorsControl433/Shared%20Documents/General/2.%20Deliverables/2.%20Demo%20Video/Resources?csf=1&web=1&e=aKBUEE))
+- [x] Finalise code structure and readme files
+- [x] Collect image/video recordings to prepare for demo video (save inside [Teams>Documents>2.Deliverables>2.Demo Video>Resources folder](https://studentutsedu.sharepoint.com/:f:/r/sites/SensorsControl433/Shared%20Documents/General/2.%20Deliverables/2.%20Demo%20Video/Resources?csf=1&web=1&e=aKBUEE))
 - [ ] Practice + Complete Demo Video
