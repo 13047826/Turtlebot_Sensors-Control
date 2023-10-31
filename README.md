@@ -4,6 +4,12 @@ Jieun Hong 13047826 <br>
 Melody Hood 13560901 <br>
 Naga Bonu 13908948 <br>
 
+> [!NOTE]
+> All teamembers have equally contributed towards creating the code
+
+## Fully Integrated System Code
+
+
 ## :bookmark_tabs: Version Control
 > [!IMPORTANT]
 > Remember to `git pull` before each session! <br>
