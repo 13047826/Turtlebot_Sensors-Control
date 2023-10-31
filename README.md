@@ -93,4 +93,4 @@ https://github.com/13047826/Turtlebot_Sensors-Control/assets/88377568/8eb17093-9
 ### Week 10: Project Code + Demo Video<sup>15 October 2023</sup>
 - [x] Finalise code structure and readme files
 - [x] Collect image/video recordings to prepare for demo video (save inside [Teams>Documents>2.Deliverables>2.Demo Video>Resources folder](https://studentutsedu.sharepoint.com/:f:/r/sites/SensorsControl433/Shared%20Documents/General/2.%20Deliverables/2.%20Demo%20Video/Resources?csf=1&web=1&e=aKBUEE))
-- [ ] Practice + Complete Demo Video
+- [x] Practice + Complete Demo Video
